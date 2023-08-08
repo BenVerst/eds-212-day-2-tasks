@@ -39,7 +39,7 @@ eval(dp_da)
 ggplot() + 
   geom_jitter(data = penguins, 
              aes(x = species, 
-                 y =flipper_length_mm, )) + 
+                 y =flipper_length_mm), color = "darkgreen" ) +
   labs(x = "Species", 
        y = "Flipper Length (mm)", 
        title = "Palmer Penguins ")
