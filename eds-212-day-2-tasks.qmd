@@ -28,7 +28,19 @@ dp_da <- D(pa, 'a')
 
 dp_da
 
-a <- 3
+a <- 1.2
 
 eval(dp_da)
+```
+
+## Penguin Plot
+
+```{r}
+ggplot() + 
+  geom_jitter(data = penguins, 
+             aes(x = species, 
+                 y =flipper_length_mm, )) + 
+  labs(x = "Species", 
+       y = "Flipper Length (mm)", 
+       title = "Palmer Penguins ")
 ```
